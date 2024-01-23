@@ -17,13 +17,30 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+header {
+    background: url("../img/spidermanheader.jpg");
+    background-size: cover;
+    height: 900px;
+}
+
 .navbar {    
     display: flex;
     flex-flow: row wrap;
     height: 100px;
-    background: var(--cor-padrao-letra);
     justify-content: center;
     align-items: center;
+}
+
+.tituloSpider {
+    display: flex;
+    width: 300px;
+    margin-top: 300px;
+    padding-left: 20px;
+    justify-content: flex-start;
+}
+
+.tituloSpider img {
+    
 }
 
 .logo {
