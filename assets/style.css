@@ -54,7 +54,7 @@ header {
 }
 
 .menu a {    
-    color: black;
+    color: var(--cor-padrao-letra);
     text-decoration: none;
     font-size: 20px;
     padding: 20px 16px;
@@ -66,6 +66,19 @@ header {
     border-bottom: 4px solid var(--cor-padrao);
 }
 
+/* MEIO DO CORPO */
+.meio-do-corpo {
+    position: absolute;
+    display: flex;
+    width: 100%;
+}
 
-
+.meio-do-corpo h1 {
+    color: var(--cor-padrao-letra);
+    text-transform: uppercase;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px #4c4848;
+    margin: 0;
+    z-index: 50%;
+}
 
