@@ -67,18 +67,32 @@ header {
 }
 
 /* MEIO DO CORPO */
+
 .meio-do-corpo {
-    position: absolute;
     display: flex;
     width: 100%;
 }
 
-.meio-do-corpo h1 {
-    color: var(--cor-padrao-letra);
-    text-transform: uppercase;
-    font-size: 2.5em;
-    text-shadow: 2px 2px 4px #4c4848;
-    margin: 0;
-    z-index: 50%;
+.meio-do-corpo img {
+    width: 100%;
 }
 
+.meio-do-corpo .informativo {
+    position: absolute;
+    width: 100%;
+}
+
+.meio-do-corpo .informativo h1 {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 2.5em;
+    text-align: center;
+    height: top;
+}
+
+.meio-do-corpo .informativo .info-p {
+    color: var(--cor-padrao-letra);
+    font-size: 1em;
+    margin: 15em;
+    padding-left: 50%;
+}
