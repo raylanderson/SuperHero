@@ -39,10 +39,6 @@ header {
     justify-content: flex-start;
 }
 
-.tituloSpider img {
-    
-}
-
 .logo {
     margin-top: 5px;
     margin-right: 50%;    
@@ -83,6 +79,7 @@ header {
 }
 
 .meio-do-corpo .informativo h1 {
+    position: relative;
     color: #fff;
     text-transform: uppercase;
     font-size: 2.5em;
@@ -90,9 +87,83 @@ header {
     height: top;
 }
 
+.meio-do-corpo .informativo h1::before {
+    content: " ";
+    position: absolute;
+    width: 100px;
+    height: 3px;
+    bottom: 0;
+    left: calc(50% - 50px);
+    border-bottom: 4px solid var(--cor-padrao-letra);
+}
+
 .meio-do-corpo .informativo .info-p {
+    text-align: justify;
     color: var(--cor-padrao-letra);
-    font-size: 1em;
-    margin: 15em;
+    font-size: 1.1em;
+    margin: 10em;
     padding-left: 50%;
 }
+
+/*  CATÁLOGO  */
+
+.catalogo h1 {
+    position: relative;
+    color: rgb(60, 56, 56);
+    text-transform: uppercase;
+    font-size: 2.5em;
+    text-align: center;
+    height: top;
+}
+
+.catalogo h1::before {
+    content: " ";
+    position: absolute;
+    width: 100px;
+    height: 3px;
+    bottom: 0;
+    left: calc(50% - 50px);
+    border-bottom: 4px solid var(--cor-padrao);
+}
+
+.catalogo img {
+    display: flex;
+    height: 500px;    
+}
+
+.catalogo .catalogo-p {
+    text-align: justify;
+    font-size: 1.1em;
+    margin: 5em;
+    padding-left: 50%;
+}
+
+.catalogo .catalogo-p button {
+    text-decoration: none;
+    color: var(--cor-padrao-letra);
+    font-weight: 700;
+    background: var(--cor-padrao-hover);
+    padding: 12px 20px;
+    margin: 30px 0;
+    border-radius: 10px;
+    transition: background 0.5s;
+    border: none;
+}
+
+
+/* PAGINA DE CATÁLOGO */
+
+.pag-catalogo {
+    background: url("../img/contatoheader.jpg");
+    background-size: cover;
+    height: 800px;
+}
+
+.cont-title {
+    display: flex;
+    width: 25%;
+    margin-top: 200px;
+    padding-left: 3%;
+    justify-content: flex-start;
+}
+
