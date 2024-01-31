@@ -132,10 +132,11 @@ header {
 }
 
 .catalogo .catalogo-p {
+    display: flex;
     text-align: justify;
+    align-items: center;
     font-size: 1.1em;
     margin: 5em;
-    padding-left: 50%;
 }
 
 .catalogo .catalogo-p button {
@@ -167,3 +168,63 @@ header {
     justify-content: flex-start;
 }
 
+.entre-em-contato h1 {
+    text-align: center;
+    margin-top: 20px;
+    color: rgba(38, 37, 37, 0.826);
+}
+
+.entre-em-contato h1::after {
+    content: " ";
+    position: absolute;
+    width: 109px;
+    height: 6px;
+    bottom: -162px;
+    left: calc(49% - 44px);
+    border-bottom: 4px solid var(--cor-padrao);
+}
+
+.entre-em-contato p {
+    display: flex;
+    text-align: center;
+    font-size: 1.1em;
+    margin: 3em;
+}
+
+form {
+    margin: 0 auto;
+    width: 400px;
+    padding: 2%;
+}
+
+input, textarea {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f1f1ef;
+    color: rgb(8, 5, 5);
+    width: 100%;
+    height: 40px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 1px solid #bfbfbee6;
+    margin: 10px;
+    border-radius: 8px;
+}
+
+input:focus, textarea:focus {
+    border-color: #e0e0e0;
+}
+
+textarea {
+    resize: none;
+}
+
+button {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--cor-padrao-hover);
+    columns: var(--cor-padrao-letra);
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 10px solid var(--cor-padrao-hover);
+    font-weight: 600;
+    outline: none;
+}
