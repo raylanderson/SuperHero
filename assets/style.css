@@ -107,7 +107,7 @@ header {
 
 /*  CATÁLOGO  */
 
-.catalogo h1 {
+.contato h1 {
     position: relative;
     color: rgb(60, 56, 56);
     text-transform: uppercase;
@@ -116,7 +116,7 @@ header {
     height: top;
 }
 
-.catalogo h1::before {
+.contato h1::before {
     content: " ";
     position: absolute;
     width: 100px;
@@ -126,12 +126,12 @@ header {
     border-bottom: 4px solid var(--cor-padrao);
 }
 
-.catalogo img {
+.contato img {
     display: flex;
     height: 500px;    
 }
 
-.catalogo .catalogo-p {
+.contato .contato-p {
     display: flex;
     text-align: justify;
     align-items: center;
@@ -139,7 +139,7 @@ header {
     margin: 5em;
 }
 
-.catalogo .catalogo-p button {
+.contato .contato-p button {
     text-decoration: none;
     color: var(--cor-padrao-letra);
     font-weight: 700;
@@ -154,7 +154,7 @@ header {
 
 /* PAGINA DE CATÁLOGO */
 
-.pag-catalogo {
+.pag-contato {
     background: url("../img/contatoheader.jpg");
     background-size: cover;
     height: 800px;
