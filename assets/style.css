@@ -152,7 +152,7 @@ header {
 }
 
 
-/* PAGINA DE CATÁLOGO */
+/* PAGINA DE CONTATO */
 
 .pag-contato {
     background: url("../img/contatoheader.jpg");
@@ -227,4 +227,19 @@ button {
     border: 10px solid var(--cor-padrao-hover);
     font-weight: 600;
     outline: none;
+}
+
+/* PAGINA DE CATALOGO */
+.pag-catalogo {
+    background: url("../img/captainmarvelheader.jpg");
+    background-size: cover;
+    height: 800px;
+}
+
+.cat-title img {
+    display: flex;
+    width: 40%;
+    margin-top: 300px;
+    padding-left: 4%;
+    justify-content: flex-start;
 }
