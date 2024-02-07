@@ -192,16 +192,29 @@ header {
 }
 
 form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
     margin: 0 auto;
     width: 400px;
     padding: 2%;
 }
 
-input, textarea {
+.container-form {
+    display: flex;
+    width: 200%;
+}
+
+.container-inputs {
+    margin-right: 8px;
+
+}
+
+input, textarea {    
     font-family: 'Montserrat', sans-serif;
     background-color: #f1f1ef;
-    color: rgb(8, 5, 5);
-    width: 100%;
+    color: rgb(52, 50, 50);
+    width: 95%;
     height: 40px;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -218,15 +231,23 @@ textarea {
     resize: none;
 }
 
-button {
-    font-family: 'Montserrat', sans-serif;
-    background-color: var(--cor-padrao-hover);
-    columns: var(--cor-padrao-letra);
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    border: 10px solid var(--cor-padrao-hover);
-    font-weight: 600;
-    outline: none;
+.btn {
+    transform: translateX(120%);
+    padding: 0;
+    background: var(--cor-padrao-hover);
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+}
+
+.text {
+    display: block;
+    padding-left: 50%;
+    padding: 10px 200px;
+    border-radius: 12px;
+    font-size: 20px;
+    color: var(--cor-padrao-letra);
+    transform: translateY(-2px);
 }
 
 /* PAGINA DE CATALOGO */
@@ -242,4 +263,51 @@ button {
     margin-top: 300px;
     padding-left: 4%;
     justify-content: flex-start;
+}
+
+.container-caralogo {
+    background-color: #449ad3;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 5%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.title-catalogo {
+    width: 100%;
+}
+
+.title-catalogo h1 {
+    color: rgb(52, 50, 50);
+    font-family: "Open Sans";
+    letter-spacing: 2px;
+    text-align: center;
+    font-size: 2.2em;
+}
+
+.opcoes-catalogo {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 2%;
+    grid-row-gap: 2%;
+    padding: 2% 6%;
+}
+
+.opcoes-catalogo .foto-catalogo img {
+    margin: 20px;
+    background-color: #fff;
+    width: 200px;
+    border-radius: 10px;
+}
+
+.info-calalogo {
+    margin: 5px;
+}
+
+.info-calalogo p {
+    margin-top: 15px;
 }
