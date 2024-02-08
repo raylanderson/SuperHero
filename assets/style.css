@@ -126,12 +126,12 @@ header {
     border-bottom: 4px solid var(--cor-padrao);
 }
 
-.contato img {
+.catalogo img {
     display: flex;
     height: 500px;    
 }
 
-.contato .contato-p {
+.contato .catalogo-p {
     display: flex;
     text-align: justify;
     align-items: center;
@@ -139,7 +139,7 @@ header {
     margin: 5em;
 }
 
-.contato .contato-p button {
+.contato .catalogo-p button {
     text-decoration: none;
     color: var(--cor-padrao-letra);
     font-weight: 700;
@@ -279,11 +279,22 @@ textarea {
 }
 
 .title-catalogo h1 {
-    color: rgb(52, 50, 50);
-    font-family: "Open Sans";
-    letter-spacing: 2px;
+    position: relative;
+    color: rgb(60, 56, 56);
+    text-transform: uppercase;
+    font-size: 2.5em;
     text-align: center;
-    font-size: 2.2em;
+    height: top;
+}
+
+.title-catalogo h1::before {
+    content: " ";
+    position: absolute;
+    width: 100px;
+    height: 3px;
+    bottom: 0;
+    left: calc(50% - 50px);
+    border-bottom: 4px solid var(--cor-padrao);
 }
 
 .opcoes-catalogo {
@@ -295,6 +306,7 @@ textarea {
     grid-column-gap: 2%;
     grid-row-gap: 2%;
     padding: 2% 6%;
+    
 }
 
 .opcoes-catalogo .foto-catalogo img {
