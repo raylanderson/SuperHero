@@ -23,7 +23,7 @@ header {
     height: 900px;
 }
 
-.navbar {    
+.navbar {
     display: flex;
     flex-flow: row wrap;
     height: 100px;
@@ -41,7 +41,7 @@ header {
 
 .logo {
     margin-top: 5px;
-    margin-right: 50%;    
+    margin-right: 50%;
 }
 
 .menu {
@@ -49,7 +49,7 @@ header {
     padding: 20px;
 }
 
-.menu a {    
+.menu a {
     color: var(--cor-padrao-letra);
     text-decoration: none;
     font-size: 20px;
@@ -128,7 +128,7 @@ header {
 
 .catalogo img {
     display: flex;
-    height: 500px;    
+    height: 500px;
 }
 
 .contato .catalogo-p {
@@ -210,7 +210,7 @@ form {
 
 }
 
-input, textarea {    
+input, textarea {
     font-family: 'Montserrat', sans-serif;
     background-color: #f1f1ef;
     color: rgb(52, 50, 50);
@@ -265,7 +265,7 @@ textarea {
     justify-content: flex-start;
 }
 
-.container-caralogo {
+.container-catalogo {
     background-color: #449ad3;
     padding-left: 10%;
     padding-right: 10%;
@@ -306,7 +306,7 @@ textarea {
     grid-column-gap: 2%;
     grid-row-gap: 2%;
     padding: 2% 6%;
-    
+
 }
 
 .opcoes-catalogo .foto-catalogo img {
