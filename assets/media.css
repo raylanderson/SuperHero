@@ -1,0 +1,21 @@
+@media screen and (max-width: 600px) {
+    /* PAGINA HOME*/
+    .navbar {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 20px 15px 30px;
+        gap: 8%;
+    }
+
+    .logo {
+        align-items: center;
+        margin-top: 3px;
+        padding-block: 50px;
+    }
+
+    header {
+        width: 100%;
+        height: 100%;
+    }
+}
