@@ -251,34 +251,14 @@ textarea {
 }
 
 /* PAGINA DE CATALOGO */
-.pag-catalogo {
-    background: url("../img/captainmarvelheader.jpg");
-    background-size: cover;
-    height: 800px;
+
+.gallery {
+    max-width: 1200px;
+    margin: 64px auto 0;
+    padding: 0 24px;
 }
 
-.cat-title img {
-    display: flex;
-    width: 40%;
-    margin-top: 300px;
-    padding-left: 4%;
-    justify-content: flex-start;
-}
-
-.container-catalogo {
-    background-color: #449ad3;
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-bottom: 5%;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.title-catalogo {
-    width: 100%;
-}
-
-.title-catalogo h1 {
+.gallery h1 {
     position: relative;
     color: rgb(60, 56, 56);
     text-transform: uppercase;
@@ -287,7 +267,7 @@ textarea {
     height: top;
 }
 
-.title-catalogo h1::before {
+.gallery h1::before {
     content: " ";
     position: absolute;
     width: 100px;
@@ -297,29 +277,36 @@ textarea {
     border-bottom: 4px solid var(--cor-padrao);
 }
 
-.opcoes-catalogo {
+.gallery-row {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
+    gap: 24px;
+}
+
+.gallery-row div {
+    flex: 1 1 300px;
+}
+
+.gallery-row img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
+
+.gallery span {
+    font-weight: bold;
+}
+
+.gallery p {
+    font-family: sans-serif;
+}
+
+.gallery button {
+    padding: 10px;
+    background-color: var(--cor-padrao-hover);
+    color: var(--cor-padrao-letra);
+    font-weight: 700;
+    border-radius: 8px;
+    border: none;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-column-gap: 2%;
-    grid-row-gap: 2%;
-    padding: 2% 6%;
-
-}
-
-.opcoes-catalogo .foto-catalogo img {
-    margin: 20px;
-    background-color: #fff;
-    width: 200px;
-    border-radius: 10px;
-}
-
-.info-calalogo {
-    margin: 5px;
-}
-
-.info-calalogo p {
-    margin-top: 15px;
 }
