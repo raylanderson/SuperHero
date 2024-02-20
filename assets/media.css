@@ -5,17 +5,25 @@
         align-items: center;
         flex-wrap: wrap;
         padding: 20px 15px 30px;
-        gap: 8%;
+        gap: 8%; 
+        flex-direction: column;      
     }
 
     .logo {
         align-items: center;
         margin-top: 3px;
-        padding-block: 50px;
+        margin-top: 0px;
+        margin-right: 0%;
+
     }
 
     header {
         width: 100%;
         height: 100%;
+    }
+
+    .meio-do-corpo .informativo .info-p {
+        width: auto;
+        margin: 10px;
     }
 }

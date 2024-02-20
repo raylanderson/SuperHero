@@ -25,9 +25,9 @@ header {
 
 .navbar {
     display: flex;
-    flex-flow: row wrap;
-    height: 100px;
-    justify-content: center;
+
+    justify-content: start;
+    gap: 50px;
     align-items: center;
 }
 
@@ -41,7 +41,6 @@ header {
 
 .logo {
     margin-top: 5px;
-    margin-right: 50%;
 }
 
 .menu {
@@ -67,14 +66,10 @@ header {
 .meio-do-corpo {
     display: flex;
     width: 100%;
-}
-
-.meio-do-corpo img {
-    width: 100%;
+    background-image: url(../img/thor_header.jpg);
 }
 
 .meio-do-corpo .informativo {
-    position: absolute;
     width: 100%;
 }
 
@@ -101,8 +96,8 @@ header {
     text-align: justify;
     color: var(--cor-padrao-letra);
     font-size: 1.1em;
-    margin: 10em;
-    padding-left: 50%;
+    width: 50%;
+    margin-left: auto;
 }
 
 /*  CATÁLOGO  */
@@ -128,7 +123,8 @@ header {
 
 .catalogo img {
     display: flex;
-    height: 500px;
+    width: 100%;
+    max-width: 600px;
 }
 
 .contato .catalogo-p {
