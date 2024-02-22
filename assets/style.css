@@ -64,9 +64,11 @@ header {
 /* MEIO DO CORPO */
 
 .meio-do-corpo {
+    padding: 270px;
     display: flex;
     width: 100%;
     background-image: url(../img/thor_header.jpg);
+    
 }
 
 .meio-do-corpo .informativo {
@@ -79,7 +81,6 @@ header {
     text-transform: uppercase;
     font-size: 2.5em;
     text-align: center;
-    height: top;
 }
 
 .meio-do-corpo .informativo h1::before {
