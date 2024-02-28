@@ -68,7 +68,7 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;    
-    padding: 155px;
+    padding: 255px;
 }
 
 .meio-do-corpo .informativo {
@@ -76,12 +76,13 @@ header {
 }
 
 .meio-do-corpo .informativo h1 {
-    position: relative;
     color: #fff;
-    text-transform: uppercase;
-    font-size: 1.5em;
+    margin-top: -275px;
+    padding-top: 30px;
+    padding-bottom: 36px;
     text-align: center;
-    margin-bottom: 20px;
+    font-family: "Open Sans";
+    font-size: 1.8em;
 }
 
 .meio-do-corpo .informativo h1::before {
@@ -89,7 +90,7 @@ header {
     position: absolute;
     width: 100px;
     height: 3px;
-    bottom: 0;
+    bottom: -10px;;
     left: calc(50% - 50px);
     border-bottom: 4px solid var(--cor-padrao-letra);
 }
